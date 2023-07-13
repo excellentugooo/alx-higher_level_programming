@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-def __magic_calculation__(a, b):
+
+
+def magic_calculation(a, b):
+    """Match bytecode provided"""
     from magic_calculation_102 import add, sub
 
     if a < b:
