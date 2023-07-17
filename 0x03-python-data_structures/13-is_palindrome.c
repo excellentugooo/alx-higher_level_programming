@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stddef.h>
 
 /**
  * reverse_listint - Reverses a singly-linked list
@@ -13,7 +14,7 @@ listint_t *reverse_listint(listint_t **head)
 	while (nod)
 	{
 		next = nod->next;
-		node->next = previous;
+		nod->next = previous;
 		previous = nod;
 		nod = next;
 	}
