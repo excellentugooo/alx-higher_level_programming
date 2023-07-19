@@ -3,9 +3,9 @@ def to_subtract(list_number):
     to_subs = 0
     max_lists = max(list_number)
 
-    for i in list_number:
-        if max_lists > i:
-            to_subs += i
+    for n in list_number:
+        if max_lists > n:
+            to_subs += n
 
     return (max_lists - to_subs)
 
