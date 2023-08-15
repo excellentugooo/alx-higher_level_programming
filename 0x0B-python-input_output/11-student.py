@@ -25,7 +25,7 @@ class Student:
         """
         if (type(attrs) == list and
                 all(type(element) == str for element in attrs)):
-            return {att: getattr(self, att) for att in attrs if hasattr(self, att)}
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
 
     def reload_from_json(self, json):
@@ -33,5 +33,5 @@ class Student:
         Args:
             json (dict): The key/value pairs to replace attributes with.
         """
-        for key, value in json.items():
-            setattr(self, key, value)
+        for k, val in json.items():
+            setattr(self, k, val)
