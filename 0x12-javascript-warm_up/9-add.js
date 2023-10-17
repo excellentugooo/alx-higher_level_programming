@@ -3,10 +3,10 @@ function add (a, b) {
   console.log(a + b);
 }
 
-let firstArg = process.argv[2];
-let secondArg = process.argv[3];
+let firstArgum = process.argv[2];
+let secondArgum = process.argv[3];
 
-firstArg = parseInt(firstArg);
-secondArg = parseInt(secondArg);
+firstArgum = parseInt(firstArgum);
+secondArgum = parseInt(secondArgum);
 
-add(firstArg, secondArg);
+add(firstArgum, secondArgum);
